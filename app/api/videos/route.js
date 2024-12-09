@@ -3,5 +3,5 @@ const videos = () => import("@/data/videos.json").then((res) => res.default);
 
 export async function GET() {
   const data = await videos();
-  return NextResponse.json(data.results);
+  return NextResponse.json(data);
 }

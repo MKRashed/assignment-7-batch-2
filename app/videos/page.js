@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-export default function CardVideo() {
+export default function Videos() {
   const [videos, setVideos] = useState([]);
   useEffect(() => {
     const fetchVideos = async () => {

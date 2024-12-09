@@ -3,7 +3,7 @@ const videos = () => import("@/data/videos.json").then((res) => res.default);
 
 const findMethod = async (id) => {
   const data = await videos();
-  return data?.results.find((video) => video.id === +id);
+  return data?.find((video) => video.videoId === +id);
 };
 
 export async function GET(request, { params }) {

@@ -1,10 +1,10 @@
 import Hero from "@/components/Hero";
-import CardVideo from "./videos/page";
+import Videos from "./videos/page";
 export default function Home() {
   return (
     <>
       <Hero />
-      <CardVideo />
+      <Videos />
     </>
   );
 }
